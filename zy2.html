@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function calcAngleArea(){
+        var wide=window.prompt("请输入三角形的底边长度！","");
+        var high=window.prompt("请输入三角形的高！","");
+        var area=wide*high/2;
+        if(isNaN(area)){
+            alert("您的输入有误！");
+        }else{
+            alert("三角形的面积为"+area);
+        }
+    }
+    calcAngleArea();
+</script>
+</body>
+</html>
