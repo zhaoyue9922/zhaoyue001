@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    #div2{
+        width: 150px;
+        height: 150px;
+        background: red;
+    }
+        div{
+            color: green;
+        }
+        .style1{
+            background: yellow;
+        }
+        #p1,#h3{
+            background: #00f;
+        }
+        #div4 div{
+            background: #ccc;
+        }
+        #div3 > h1{
+            background: #000fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"style="width: 100px; height: 100px;background-color: red;">css</div>
+    <p style="width: 150px; height: 150px; background: green;">css</p>
+    <div id="div2">内部样式</div>
+    <div class="style1">1</div>
+    <div class="style1">2</div>
+    <div>3</div>
+    <div>4</div>
+    <p id="p1">p1</p>
+    <h3 id="h3">h3</h3>
+    <div id="div4">
+        <div>div01</div>
+        <div>div02</div>
+        <div>div03</div>
+    </div>
+    <div id="div3">
+        <h1>第一个h1</h1>
+        <div>
+            <h1>第二个h1</h1>
+        </div>
+    </div>
+</body>
+</html>
+<!--
+css选择器
+1.id选择器 唯一的 #id{}
+2.标签/元素选择器  div{}
+3.class选择器 可以重复的 .class{}
+4.分组选择器  #div1,#div2{}
+5.后代选择器  #div4 div{}
+6. 子代选择器  #div3 > h1{}
+
+权重值
+id:100
+class:10
+-->
