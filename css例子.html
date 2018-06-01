@@ -24,6 +24,17 @@
         #div3 > h1{
             background: #000fff;
         }
+        #div5{
+            width: 200px;
+            height: 200px;
+            background: #ff0000;
+        }
+        #div5:hover{
+            background: #00ff00;
+        }
+        a:hover{
+            background: #00ff00;
+        }
     </style>
 </head>
 <body>
@@ -46,6 +57,8 @@
         <div>
             <h1>第二个h1</h1>
         </div>
+        <div id="div5"></div>
+        <a href="http://www.baidu.com">百度</a>
     </div>
 </body>
 </html>
@@ -57,6 +70,8 @@ css选择器
 4.分组选择器  #div1,#div2{}
 5.后代选择器  #div4 div{}
 6. 子代选择器  #div3 > h1{}
+7. 多类选择器 div.aa.bb{}
+8. 伪类选择器 a:hover{}
 
 权重值
 id:100
