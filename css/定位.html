@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            height: 2000px;
+        }
+        #div1{
+            width: 400px;
+            height: 400px;
+            background: green;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        #div2{
+            width:200px;
+            height: 200px;
+            background: red;
+            position: absolute;
+            top:50px;
+            left: 50px;
+        }
+        #div3{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+
+        }
+        #div4{
+            height: 50px;
+            background: orangered;
+            margin-top: 100px;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="div1">-->
+    <!--<div id="div2">-->
+    <!--</div>-->
+    <div id="div3">回到顶部</div>
+    <div id="div4"></div>
+</div>
+</body>
+</html>
+<!--
+position (定位)
+static: 默认值
+relative相对定位: 相对于自己的初始位置，不脱离文档流
+absolute绝对定为: 相对于离它最近的已经定位的祖先元素，脱离文档流
+fixed固定定位: 相对于窗口，脱离文档流，有兼容性问题
+sticky粘性定位
+-->
