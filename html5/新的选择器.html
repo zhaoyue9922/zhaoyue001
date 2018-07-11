@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">tyui</div>
+<div class="aa">qwer</div>
+<div class="aa">asdf</div>
+<div class="aa">zxcv</div>
+<div id="div2" class="aa bb cc">ghjk</div>
+<script>
+//    var oDiv = document.getElementById('div1');//dom对象  null
+//    var arr = document.getElementsByClassName('aa');//节点列表 （数组）[]
+//    var arr = document.getElementsByTagName('p');//节点列表 （数组）[]
+//    var arr = document.getElementsByName('XX');//节点列表 （数组）[]
+//    for(var i=0; i< arr.length; i++){
+//        arr[i]
+//    }
+    document.querySelector('#div');
+    var oDiv = document.querySelector('#div1');
+    oDiv.style.background='#ff0000';
+var oDiv2 = document.getElementById('div2');
+console.log(oDiv2.className );//aa bb cc
+console.log(oDiv2.classList.length);//3
+oDiv2.classList.add('dd');
+oDiv2.classList.remove('aa');
+oDiv2.classList.toggle('ee');
+
+
+</script>
+</body>
+</html>
