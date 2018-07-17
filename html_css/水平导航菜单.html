@@ -2,9 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>水平导航菜单</title>
+    <style>
+        /*css reset 样式重置*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+           list-style:none;
+        }
+        img{
+            border: 0;
+        }
+        #nav{
+            width: 408px;
+            height: 30px;
+        }
+        #nav li{
+            width: 100px;
+            height: 30px;
+            background: #0000ff;
+            margin-right: 2px;
+            float: left;
+
+        }
+        #nav a{
+            color: #ffffff;
+            text-align: center;
+            line-height: 30px;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        #nav li:hover{
+            background: #ff0000;
+        }
+        /*.title{*/
+            /*background: #cccccc;*/
+            /*width: 406px;*/
+            /*height: 200px;*/
+        /*}*/
+        #nav .submenu {
+            display: none;
+        }
+        #nav > li:hover{
+            display: block;
+        }
+        #nav .submenu li{
+            margin-top: 1px;
+            background: #cccccc;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        #nav li:hover .submenu{
+            display: block;
+        }
+        #nav .submenu li:hover{
+            background: #ffff00;
+        }
+    </style>
 </head>
 <body>
-
+    <ul id="nav">
+        <li class="main-menu">
+            <a href="">Link one</a>
+            <ul class="submenu">
+                <li>子菜单1</li>
+                <li>子菜单2</li>
+                <li>子菜单3</li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Link two</a>
+            <ul class="submenu">
+                <li>子菜单4</li>
+                <li>子菜单5</li>
+                <li>子菜单6</li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Link three</a>
+            <ul class="submenu">
+                <li>子菜单7</li>
+                <li>子菜单8</li>
+                <li>子菜单9</li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Link four</a>
+            <ul class="submenu">
+                <li>子菜单10</li>
+                <li>子菜单11</li>
+                <li>子菜单12</li>
+            </ul>
+        </li>
+    </ul>
+<!--<div class="title">这是一个标题</div>-->
 </body>
 </html>
