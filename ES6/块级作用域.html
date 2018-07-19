@@ -29,7 +29,7 @@
 
     缺点  内存泄漏 */
 
-    for(var i=0; i<aLi.length; i++){
+   /*  for(var i=0; i<aLi.length; i++){
         aLi[i].onclick = function(){
             console.log(i);  //i = 4
         }
@@ -39,7 +39,24 @@
             aLi[i].onclick = function(){
             console.log(idx);
         }
-        })(i);   /*  函数的立即调用 */
+        })(i);     函数的立即调用
+    }
+     */
+   //4.块级作用域
+       /*  for(let i=0; i<4; i++){
+            console.log(i);
+        }
+
+        if(true){
+            let x = 'a';
+        }
+        
+        console.log(x); */
+        // console.log(i);
+    for(let i=0; i<aLi.lenght; i++){
+        aLi[i].onclick = function(){
+            console.log(i);
+        }
     }
         
     </script>
