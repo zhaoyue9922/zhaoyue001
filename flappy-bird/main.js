@@ -96,6 +96,7 @@ game_state.main.prototype = {
     },
 };
 
+
 // Add and start the 'main' state to start the game
 game.state.add('main', game_state.main);  
 game.state.start('main'); 
