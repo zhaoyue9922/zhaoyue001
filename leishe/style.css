@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 100px;
+    background: #000;
+}
+.computer-menu{
+    display: none;
+}
+.mouse-menu{
+    display: none;
+}
+.keyboard-menu{
+    display: none;
+}
+.audio-menu{
+    display: none;
+}
+.mouse-pad-menu{
+    display: none;
+}
+.suit-menu{
+    display: none;
+}
+.hostuse-menu{
+    display: none;
+}
+.ambitus-menu{
+    display: none;
+}
+.accredit-menu{
+    display: none;
+}
+.software-menu{
+    display: none;
+}
+.product-menu-text{
+    color: red;
+}
+.tec-menu{
+    display: none;
+}
+.tec-menu-text{
+    color:red;
+}
+.news-menu{
+    display: none;
+}
+.news-menu-text{
+    color:red;
+}
+.global-menu{
+    display: none;
+}
+.global-menu-text{
+    color:red;
+}

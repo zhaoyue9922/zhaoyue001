@@ -1,0 +1,17 @@
+.header{
+	width: 100%;
+    height: 142px;
+    background: #ffffff;
+}
+.header-nav1{
+	width: 0 auto;
+    height: 90px;
+    margin-bottom: 1px solid;
+}
+.header-nav2{
+	width: 0 auto;
+	height: 52px;
+}
+.header-nav1 img,li,input{
+    float: left;
+}

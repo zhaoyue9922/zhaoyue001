@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+    }
+    #box{
+        width: 200px;
+        height: 200px;
+        background: #ff0000;
+    }
+    #progress-div{
+        height: 20px;
+        border: 1px solid;
+    }
+    #progress-bar{
+        height:100%;
+        background: #ff0000;
+        width: 0;
+    }
+    </style>
+</head>
+<body>
+    <button id="start">开始动画</button>
+    <!-- <div id="box"></div> -->
+    <br>
+    <div id="progress-div">
+        <div id="progress-bar"></div>
+    </div>
+    <script>
+    var oStart = document.getElementById('start');
+    var oBox = document.getElementById('box');
+    var oProgersssBar = document.getElementById('progress-bar');
+
+    oStart.onclick = function(){
+        /* var timer = setInterval(function(){
+            oBox.style.width = oBox.offsetWidth + 10 +'px';
+            if(oBox.offsetWidth > 500){
+            clearInterval(timer);
+            }
+       },50); */
+
+        var timer = setInterval(function(){
+            oProgersssBar.style.width = oProgersssBar.offsetWidth + 10 +'px';
+            if(oProgersssBar.offsetWidth >= oProgersssBar.parentNode.offsetWidth){
+                clearInterval(timer);
+            }
+        },50);
+    
+        };
+        
+    
+    </script>
+</body>
+</html>
